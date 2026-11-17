@@ -1,6 +1,6 @@
 // ====== PENGATURAN (ganti sesuai kebutuhan) ======
 // Nomor WhatsApp tujuan pesanan, format internasional tanpa "+" atau spasi (contoh: 6281234567890)
-const WA_NUMBER = "6285892477475";
+const WA_NUMBER = "6281234567890";
 // Minimal belanja untuk gratis ongkir (rupiah)
 const FREE_SHIPPING_MIN = 150000;
 // Ongkos kirim flat jika belanja di bawah batas gratis ongkir (rupiah)
@@ -21,7 +21,7 @@ const GRINDS = [
 const $ = (sel) => document.querySelector(sel);
 const rupiah = (n) => "Rp " + new Intl.NumberFormat("id-ID").format(n);
 const esc = (s) =>
-  String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"": "&quot;", "'": "&#39;" }[c]));
+  String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const waLink = (text) => `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
 
 // ---------- Katalog (diambil dari tombol "Tambah ke keranjang") ----------
