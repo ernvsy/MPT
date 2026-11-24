@@ -1,426 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Onthel Coffee — Kopi Excelsa dari Wonosalam</title>
-  <meta name="description" content="Kopi Excelsa dari Wonosalam, Jombang. Dikelola bersama BSO BCA UKM TDC ITS untuk kopi lokal yang autentik dan berkelanjutan.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Onthel — Kopi Excelsa Wonosalam</title>
+<meta name="description" content="Kopi Excelsa khas Wonosalam, Jombang. Kopi Nusantara, dari Petani untuk Dunia.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="logo" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="6"/><path d="M50 13v14M50 73v14M13 50h14M73 50h14M24 24l9 10M76 24l-9 10M24 76l9-10M76 76l-9-10" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><ellipse cx="50" cy="50" rx="12" ry="17" transform="rotate(30 50 50)" fill="currentColor"/><path d="M44 63c8-4 6-18 12-26" fill="none" stroke="var(--g)" stroke-width="2.5" stroke-linecap="round"/></symbol>
+  <symbol id="bean" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><ellipse cx="12" cy="12" rx="6" ry="9" transform="rotate(30 12 12)"/><path d="M9 17c5-2 3-8 6-10"/></g></symbol>
+  <symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19C5 9 11 4 20 4c0 9-5 15-15 15zM5 19l9-9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path d="M3 21l1.5-4.5A9 9 0 1 1 8 19.5zM9 8c0 4 3 7 7 7l1-2-2-1-1 1c-1-.5-2-1.500-2.500-2.500l1-1-1-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+</svg>
 
-  <!-- Simbol SVG yang dipakai ulang -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <symbol id="logo" viewBox="0 0 64 64">
-        <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
-          <circle cx="32" cy="32" r="26"/>
-          <path d="M32 2v6M32 56v6M2 32h6M56 32h6M11 11l4 4M49 49l4 4M53 11l-4 4M15 49l-4 4"/>
-        </g>
-        <ellipse cx="32" cy="32" rx="9" ry="14" transform="rotate(30 32 32)" fill="currentColor"/>
-        <path d="M26 41c4-6 8-12 12-18" stroke="#33190a" stroke-width="2.6" stroke-linecap="round" fill="none"/>
-      </symbol>
-      <symbol id="i-bean" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 17C3 11 8 4 17 4c2 0 3 1 3 3 0 9-7 14-13 12-1-.3-1.6-.9-2-2z"/>
-          <path d="M5 19c4-4 7-8 9-12"/>
-        </g>
-      </symbol>
-      <symbol id="i-leaf" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20 4C10 4 5 9 5 15c0 2 1 4 3 4 6 0 12-5 12-15z"/>
-          <path d="M4 20c3-5 6-8 11-11"/>
-        </g>
-      </symbol>
-      <symbol id="i-shield" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/>
-          <path d="M8.5 12l2.5 2.5 4.5-5"/>
-        </g>
-      </symbol>
-      <symbol id="i-truck" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/>
-          <circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/>
-        </g>
-      </symbol>
-      <symbol id="i-bag" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 7h12l-1 13H7z"/><path d="M9 7V5.5A3 3 0 0 1 12 3a3 3 0 0 1 3 2.5V7"/>
-        </g>
-      </symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24">
-        <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/>
-          <path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z"/>
-        </g>
-      </symbol>
-      <symbol id="i-arrow" viewBox="0 0 24 24">
-        <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </symbol>
-      <symbol id="i-plus" viewBox="0 0 24 24">
-        <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      </symbol>
-      <symbol id="i-check" viewBox="0 0 24 24">
-        <path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-      </symbol>
-    </defs>
-  </svg>
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Onthel — ke atas">
-        <svg class="brand-logo" aria-hidden="true"><use href="#logo"/></svg>
-        <span class="brand-word">Onthel</span>
-      </a>
-
-      <nav class="nav" id="nav" aria-label="Navigasi utama">
-        <a href="#cerita">Cerita Kami</a>
-        <a href="#produk">Kopi</a>
-        <a href="#testimoni">Testimoni</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="cart-btn" id="cartOpen" aria-label="Buka keranjang">
-          <svg width="22" height="22" aria-hidden="true"><use href="#i-bag"/></svg>
-          <span class="cart-count" id="cartCount" hidden>0</span>
-        </button>
-        <a href="#produk" class="btn btn-amber">Beli sekarang</a>
-        <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main id="top">
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <p class="eyebrow eyebrow-amber">Batch 01 · Panen 2026</p>
-        <h1>Kopi Excelsa, <em>langsung dari</em> Wonosalam.</h1>
-        <p class="hero-lead">Kopi lokal yang autentik dan berkelanjutan, dikelola bersama BSO BCA UKM TDC ITS.</p>
-        <a href="#produk" class="btn btn-amber btn-lg">Pilih kopimu <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-      </div>
-    </section>
-
-    <!-- CERITA KAMI -->
-    <section class="story" id="cerita">
-      <div class="container story-grid">
-        <div>
-          <p class="eyebrow">Cerita kami</p>
-          <h2>Dari lereng Wonosalam, <em>untuk cangkirmu.</em></h2>
-        </div>
-        <div class="story-text">
-          <p>Onthel membawa kopi Excelsa dari Wonosalam, Jombang, Jawa Timur ke meja kamu. Kami bekerja bersama BSO BCA UKM TDC ITS untuk menghadirkan kopi lokal yang autentik dan berkelanjutan.</p>
-          <p>Setiap batch dibuat kecil agar asal-usulnya tetap jelas, dari kebun sampai kemasan.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- KEUNGGULAN -->
-    <section class="features">
-      <div class="container features-grid">
-        <article class="feature">
-          <div class="feature-top">
-            <span class="icon-circle"><svg width="22" height="22" aria-hidden="true"><use href="#i-bean"/></svg></span>
-            <span class="feature-num">01</span>
-          </div>
-          <h3>Karakter yang hidup</h3>
-          <p>Aroma nangka matang, kakao, rempah hangat, dan keasaman lembut yang menyegarkan.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-top">
-            <span class="icon-circle"><svg width="22" height="22" aria-hidden="true"><use href="#i-leaf"/></svg></span>
-            <span class="feature-num">02</span>
-          </div>
-          <h3>Jejak yang transparan</h3>
-          <p>Berasal dari kebun dan petani yang jelas, diproses dalam batch kecil yang dapat ditelusuri.</p>
-        </article>
-        <article class="feature">
-          <div class="feature-top">
-            <span class="icon-circle"><svg width="22" height="22" aria-hidden="true"><use href="#i-shield"/></svg></span>
-            <span class="feature-num">03</span>
-          </div>
-          <h3>Sangrai yang konsisten</h3>
-          <p>Medium roast untuk menjaga karakter asli Excelsa tetap seimbang di setiap seduhan.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- PRODUK -->
-    <section class="products" id="produk">
-      <div class="container">
-        <div class="products-head">
-          <div>
-            <p class="eyebrow">Batch 01 · Panen 2026</p>
-            <h2>Pilih <em>ritualmu.</em></h2>
-          </div>
-          <p class="products-lead">Satu origin, tiga ukuran. Seluruh kopi tersedia dalam bentuk biji utuh atau digiling sesuai metode seduhmu.</p>
-        </div>
-
-        <div class="product-grid">
-
-          <article class="product-card">
-            <div class="media media-1">
-              <img src="assets/excelsa-100.jpg" alt="Biji kopi Excelsa dan secangkir kopi di atas meja kayu" loading="lazy" onerror="this.remove()">
-              <span class="status">Tersedia</span>
-            </div>
-            <div class="product-body">
-              <p class="tag">Untuk mencoba</p>
-              <div class="product-title-row">
-                <h3>Excelsa <em>100 g</em></h3>
-                <span class="price">Rp 35.000</span>
-              </div>
-              <p class="product-note">Cocok untuk 7–8 seduhan</p>
-              <button class="btn btn-dark btn-block add-to-cart" data-id="excelsa-100" data-name="Excelsa 100 g" data-price="35000" data-img="assets/excelsa-100.jpg">
-                Tambah ke keranjang <svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg>
-              </button>
-            </div>
-          </article>
-
-          <article class="product-card featured">
-            <div class="media media-2">
-              <img src="assets/excelsa-200.jpg" alt="Biji kopi Excelsa dituang dari tangan" loading="lazy" onerror="this.remove()">
-              <span class="badge-fav">Pilihan favorit</span>
-              <span class="status">Tersedia</span>
-            </div>
-            <div class="product-body">
-              <p class="tag">Paling diminati</p>
-              <div class="product-title-row">
-                <h3>Excelsa <em>200 g</em></h3>
-                <span class="price">Rp 65.000</span>
-              </div>
-              <p class="product-note">Cocok untuk 14–16 seduhan</p>
-              <button class="btn btn-dark btn-block add-to-cart" data-id="excelsa-200" data-name="Excelsa 200 g" data-price="65000" data-img="assets/excelsa-200.jpg">
-                Tambah ke keranjang <svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg>
-              </button>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="media media-3">
-              <img src="assets/excelsa-500.jpg" alt="Lanskap kebun kopi dan pegunungan di Wonosalam" loading="lazy" onerror="this.remove()">
-              <span class="status">Pre-order</span>
-            </div>
-            <div class="product-body">
-              <p class="tag">Untuk berbagi</p>
-              <div class="product-title-row">
-                <h3>Excelsa <em>500 g</em></h3>
-                <span class="price">Rp 145.000</span>
-              </div>
-              <p class="product-note">Dikirim dalam 3–5 hari</p>
-              <button class="btn btn-dark btn-block add-to-cart" data-id="excelsa-500" data-name="Excelsa 500 g (Pre-order)" data-price="145000" data-img="assets/excelsa-500.jpg">
-                Tambah ke keranjang <svg width="18" height="18" aria-hidden="true"><use href="#i-plus"/></svg>
-              </button>
-            </div>
-          </article>
-
-        </div>
-
-        <ul class="trust">
-          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-truck"/></svg> Gratis ongkir mulai Rp150.000</li>
-          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-shield"/></svg> Pembayaran aman</li>
-          <li><svg width="22" height="22" aria-hidden="true"><use href="#i-bean"/></svg> Baru disangrai</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- TESTIMONI -->
-    <section class="testi" id="testimoni">
-      <div class="container">
-        <div class="testi-head">
-          <div>
-            <p class="eyebrow eyebrow-amber">Dari mereka yang sudah mencoba</p>
-            <h2>Cerita dari <em>setiap cangkir.</em></h2>
-          </div>
-          <div class="rating" aria-label="Rating 4,9 dari 5">
-            <span class="stars" aria-hidden="true">★★★★★</span>
-            <strong>4.9</strong> / 5
-          </div>
-        </div>
-
-        <div class="testi-grid">
-          <figure class="quote">
-            <span class="quote-mark" aria-hidden="true">”</span>
-            <blockquote>“Aromanya unik, ada rasa buah tropis yang pelan-pelan muncul. Excelsa Onthel benar-benar berbeda dari kopi yang biasa saya minum.”</blockquote>
-            <figcaption><strong>Aulia Rahma</strong><span>Coffee enthusiast, Surabaya</span></figcaption>
-          </figure>
-          <figure class="quote">
-            <span class="quote-mark" aria-hidden="true">”</span>
-            <blockquote>“Saya suka bukan hanya kopinya, tetapi cerita petaninya. Informasi produknya jelas dan proses pesan terasa mudah.”</blockquote>
-            <figcaption><strong>Bagas Pratama</strong><span>Mahasiswa ITS</span></figcaption>
-          </figure>
-          <figure class="quote">
-            <span class="quote-mark" aria-hidden="true">”</span>
-            <blockquote>“Dibuat V60 rasanya clean, manis, dan sedikit smoky. Kemasan 200 gram pas untuk stok mingguan di rumah.”</blockquote>
-            <figcaption><strong>Nadia Putri</strong><span>Home brewer, Sidoarjo</span></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-      <svg class="cta-bean" viewBox="0 0 400 400" aria-hidden="true">
-        <g fill="none" stroke="currentColor" stroke-width="42" stroke-linecap="round">
-          <ellipse cx="200" cy="200" rx="120" ry="170" transform="rotate(35 200 200)"/>
-          <path d="M120 300c60-40 40-100 80-130s60-60 90-110"/>
-        </g>
-      </svg>
-      <div class="container cta-inner">
-        <p class="eyebrow eyebrow-dark">Batch terbatas · Selagi tersedia</p>
-        <h2>Bawa pulang cerita dari Wonosalam.</h2>
-        <a href="#produk" class="btn btn-dark btn-lg">Pilih kopimu <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-about">
-        <a href="#top" class="brand brand-lg" aria-label="Onthel — ke atas">
-          <svg class="brand-logo" aria-hidden="true"><use href="#logo"/></svg>
-          <span class="brand-word">Onthel</span>
-        </a>
-        <p>Kopi Excelsa dari Wonosalam. Dikelola bersama BSO BCA UKM TDC ITS untuk kopi lokal yang autentik dan berkelanjutan.</p>
-      </div>
-      <div>
-        <h4>Jelajahi</h4>
-        <ul class="footer-links">
-          <li><a href="#cerita">Cerita kami</a></li>
-          <li><a href="#produk">Katalog kopi</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Butuh bantuan?</h4>
-        <a class="wa-link" id="waHelp" href="#" target="_blank" rel="noopener">
-          <svg width="22" height="22" aria-hidden="true"><use href="#i-wa"/></svg> Tanya kopi via WhatsApp
-        </a>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year">2026</span> Onthel Coffee. Kopi baik, dampak baik.</span>
-      <span>Wonosalam · Jombang · Jawa Timur</span>
-    </div>
-  </footer>
-
-  <!-- KERANJANG (drawer) -->
-  <div class="overlay" id="overlay" hidden></div>
-  <aside class="drawer" id="drawer" aria-label="Keranjang belanja" aria-hidden="true">
-    <div class="drawer-head">
-      <div>
-        <p class="drawer-eyebrow">Pesananmu</p>
-        <h3>Keranjang <em>kopi.</em></h3>
-      </div>
-      <button class="icon-close" id="cartClose" type="button" aria-label="Tutup keranjang">×</button>
-    </div>
-    <div class="drawer-body" id="cartItems"></div>
-    <div class="drawer-foot">
-      <div class="sum-row drawer-subtotal"><span>Subtotal</span><strong id="cartSubtotal">Rp 0</strong></div>
-      <p class="drawer-note" id="shipNote"></p>
-      <button class="btn btn-dark btn-block" id="checkoutBtn" type="button" disabled>
-        Lanjut checkout <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg>
-      </button>
-    </div>
-  </aside>
-
-  <!-- CHECKOUT (modal) -->
-  <div class="modal" id="checkoutModal" hidden>
-    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
-      <div class="modal-head">
-        <div class="modal-brand" id="checkoutTitle">
-          <svg aria-hidden="true"><use href="#logo"/></svg>
-          <strong>Onthel</strong><em>checkout</em>
-        </div>
-        <button class="icon-close" id="checkoutClose" type="button" aria-label="Tutup checkout">×</button>
-      </div>
-
-      <form class="checkout-grid" id="checkoutForm" novalidate>
-        <div class="checkout-form">
-          <p class="section-label">Informasi pengiriman</p>
-
-          <div class="field">
-            <label for="coName">Nama lengkap</label>
-            <input id="coName" name="name" type="text" placeholder="Nama penerima" autocomplete="name" required>
-            <p class="field-error" id="err-name" aria-live="polite"></p>
-          </div>
-
-          <div class="field-row">
-            <div class="field">
-              <label for="coEmail">Email</label>
-              <input id="coEmail" name="email" type="email" placeholder="nama@email.com" autocomplete="email" required>
-              <p class="field-error" id="err-email" aria-live="polite"></p>
-            </div>
-            <div class="field">
-              <label for="coPhone">Nomor telepon</label>
-              <input id="coPhone" name="phone" type="tel" inputmode="tel" placeholder="08xxxxxxxxxx" autocomplete="tel" required>
-              <p class="field-error" id="err-phone" aria-live="polite"></p>
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="coAddress">Alamat lengkap</label>
-            <textarea id="coAddress" name="address" placeholder="Nama jalan, nomor rumah, kecamatan, kota" autocomplete="street-address" required></textarea>
-            <p class="field-error" id="err-address" aria-live="polite"></p>
-          </div>
-
-          <fieldset class="pay-fieldset">
-            <legend class="section-label">Metode pembayaran</legend>
-            <div class="pay-options">
-              <label class="pay-option"><input type="radio" name="payment" value="QRIS" checked><span>QRIS</span></label>
-              <label class="pay-option"><input type="radio" name="payment" value="Bank BCA"><span>Bank BCA</span></label>
-              <label class="pay-option"><input type="radio" name="payment" value="Bank Mandiri"><span>Bank Mandiri</span></label>
-            </div>
-          </fieldset>
-        </div>
-
-        <aside class="checkout-summary" aria-label="Ringkasan pesanan">
-          <p class="section-label">Ringkasan pesanan</p>
-          <div class="sum-items" id="coItems"></div>
-          <div class="sum-lines">
-            <div class="sum-row"><span>Subtotal</span><span id="coSubtotal">Rp 0</span></div>
-            <div class="sum-row"><span>Pengiriman</span><span id="coShipping">Rp 0</span></div>
-          </div>
-          <div class="sum-row sum-total"><span>Total</span><strong id="coTotal">Rp 0</strong></div>
-          <p class="checkout-error" id="coError" role="alert" hidden></p>
-          <button class="btn btn-dark btn-block" id="payBtn" type="submit">
-            <span id="payLabel">Bayar dengan QRIS</span> <svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg>
-          </button>
-          <p class="secure-note"><svg width="14" height="14" aria-hidden="true"><use href="#i-shield"/></svg> Data dan pembayaranmu terlindungi</p>
-        </aside>
-      </form>
+<header class="hd">
+  <div class="w nav">
+    <a class="brand logo" href="#top"><svg><use href="#logo"/></svg><span>Onthel</span></a>
+    <nav><a href="#cerita">Cerita Kami</a><a href="#kopi">Kopi</a><a href="#testimoni">Testimoni</a></nav>
+    <div class="act">
+      <button class="cartb" data-open="cart" aria-label="Buka keranjang"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 7h12l-1 13H7zM9 7a3 3 0 0 1 6 0"/></svg><b id="badge" hidden>0</b></button>
+      <a class="btn sm" href="#kopi">Beli sekarang</a>
     </div>
   </div>
+</header>
 
-  <!-- SUKSES (modal) -->
-  <div class="modal" id="successModal" hidden>
-    <div class="modal-dialog modal-sm" role="dialog" aria-modal="true" aria-labelledby="successTitle">
-      <div class="modal-head">
-        <div class="modal-brand">
-          <svg aria-hidden="true"><use href="#logo"/></svg>
-          <strong>Onthel</strong><em>checkout</em>
+<main id="top">
+<section class="hero">
+  <div class="w">
+    <p class="kick"><span></span>Kopi Excelsa Wonosalam</p>
+    <h1>Lahir dari <i>tanah,</i> tumbuh jadi cerita.</h1>
+    <p class="lead">Secangkir kopi langka dari lereng Wonosalam—dipetik dalam batch terbatas, disangrai dengan cermat, dan dihadirkan untuk mereka yang menghargai asal.</p>
+    <p class="tag">Kopi Nusantara, dari Petani untuk Dunia.</p>
+    <div class="cta"><a class="btn" href="#kopi">Jelajahi kopinya <span>→</span></a><a class="btn ol" href="#cerita">Kenali cerita kami</a></div>
+    <dl class="stats"><div><dt>800+</dt><dd>MDPL</dd></div><div><dt>100%</dt><dd>Excelsa</dd></div><div><dt>Terbatas</dt><dd>Tiap panen</dd></div></dl>
+  </div>
+</section>
+
+<section id="cerita" class="story">
+  <a class="wafab" data-wa href="#" target="_blank" rel="noopener"><svg width="20" height="20"><use href="#wa"/></svg>Tanya kopi</a>
+  <div class="w grid2">
+    <figure class="arch"><img src="assets/petani.jpg" alt="Petani kopi Wonosalam tersenyum membawa hasil panen"><figcaption><svg width="26" height="26"><use href="#leaf"/></svg>Lebih dari kopi. Ini tentang rumah dan harapan.</figcaption></figure>
+    <div>
+      <p class="eb">Dari kebun ke cangkirmu</p>
+      <h2>Wonosalam, <i>tempat semuanya bermula.</i></h2>
+      <p class="big">Di lereng hijau Jombang, kopi Excelsa tumbuh perlahan di antara pepohonan tropis. Varietas langka ini dikenal dengan karakter buah yang khas, aroma kompleks, dan aftertaste panjang yang tak mudah dilupakan.</p>
+      <p>Onthel hadir untuk membawa hasil terbaik petani Wonosalam lebih dekat kepadamu. Setiap pembelian membantu menciptakan rantai nilai yang lebih adil, menjaga pengetahuan lokal, dan memastikan kebun-kebun ini terus bertumbuh.</p>
+      <ol class="steps"><li><b>01</b>Dipetik selektif saat matang</li><li><b>02</b>Diproses bersama petani lokal</li><li><b>03</b>Disangrai dalam batch kecil</li></ol>
+    </div>
+  </div>
+</section>
+
+<section class="feat">
+  <div class="w grid3">
+    <article><svg><use href="#bean"/></svg><span>01</span><h3>Karakter yang hidup</h3><p>Aroma nangka matang, kakao, rempah hangat, dan keasaman lembut yang menyegarkan.</p></article>
+    <article><svg><use href="#leaf"/></svg><span>02</span><h3>Jejak yang transparan</h3><p>Berasal dari kebun dan petani yang jelas, diproses dalam batch kecil yang dapat ditelusuri.</p></article>
+    <article><svg><use href="#shield"/></svg><span>03</span><h3>Sangrai yang konsisten</h3><p>Medium roast untuk menjaga karakter asli Excelsa tetap seimbang di setiap seduhan.</p></article>
+  </div>
+</section>
+
+<section id="kopi" class="shop">
+  <div class="w">
+    <p class="eb">Batch 01 · Panen 2026</p>
+    <h2>Temukan <i>Cita Rasamu.</i></h2>
+    <div class="grid2 pg">
+      <div class="card">
+        <div class="pimg"><img src="assets/kemasan.png" alt="Kemasan Kopi Excelsa Onthel"><span class="pill">Tersedia</span></div>
+        <div class="pbody">
+          <p class="eb">Untuk mencoba</p>
+          <div class="prow"><h3>Excelsa <i>100 g</i></h3><b id="price"></b></div>
+          <p class="mut">Cocok untuk 5-6 seduhan</p>
+          <button class="btn dk wide" data-add>Tambah ke keranjang <span>+</span></button>
         </div>
-        <button class="icon-close" id="successClose" type="button" aria-label="Tutup">×</button>
       </div>
-      <div class="success-body">
-        <div class="success-check"><svg width="30" height="30" aria-hidden="true"><use href="#i-check"/></svg></div>
-        <p class="section-label" id="successEyebrow">Pesanan berhasil dibuat</p>
-        <h2 id="successTitle">Terima kasih!</h2>
-        <p class="success-msg" id="successMsg"></p>
-        <a class="success-link" id="successWa" href="#" target="_blank" rel="noopener">Kirim detail pesanan via WhatsApp</a>
-        <button class="btn btn-dark" id="successHome" type="button">Kembali ke beranda</button>
+      <div>
+        <p class="desc">Cita rasanya menghadirkan kombinasi unik antara rasa asam segar ala buah-buahan seperti jambu biji, manis alami yang lembut, serta kepahitan ringan yang seimbang.</p>
+        <div class="tastes">
+          <div data-v="4"><i>Bitterness</i><span class="bn"></span></div>
+          <div data-v="3"><i>Acidity</i><span class="bn"></span></div>
+          <div data-v="3"><i>Aroma</i><span class="bn"></span></div>
+          <div data-v="3"><i>Sweetness</i><span class="bn"></span></div>
+        </div>
       </div>
     </div>
   </div>
+</section>
 
-  <script src="script.js"></script>
+<section id="testimoni" class="testi">
+  <div class="w">
+    <p class="eb">Dari mereka yang sudah mencoba</p>
+    <div class="trow"><h2>Cerita dari <i>setiap cangkir.</i></h2><p class="rate">★★★★★ <b>4.9</b> / 5</p></div>
+    <div class="grid3">
+      <!-- Ganti isi testimoni di bawah ini -->
+      <blockquote><span>”</span><p>“Testimoni”</p><footer><b>Konsumen</b><small>Instansi</small></footer></blockquote>
+      <blockquote><span>”</span><p>“Testimoni”</p><footer><b>Konsumen</b><small>Instansi</small></footer></blockquote>
+      <blockquote><span>”</span><p>“Testimoni”</p><footer><b>Konsumen</b><small>Instansi</small></footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <svg class="ghost"><use href="#bean"/></svg>
+  <p class="eb">Batch terbatas · Selagi tersedia</p>
+  <h2>Bawa pulang cerita dari Wonosalam.</h2>
+  <a class="btn dk" href="#kopi">Pilih kopimu <span>→</span></a>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="w fg">
+    <div><a class="brand logo" href="#top"><svg><use href="#logo"/></svg><span>Onthel</span></a><p>Kopi Excelsa dari Wonosalam. Dikelola bersama BSO BCA UKM TDC ITS untuk kopi lokal yang autentik dan berkelanjutan.</p></div>
+    <div><h4>Jelajahi</h4><a href="#cerita">Cerita kami</a><a href="#kopi">Katalog kopi</a><a href="#testimoni">Testimoni</a></div>
+    <div><h4>Butuh bantuan?</h4><a class="wal" data-wa href="#" target="_blank" rel="noopener"><svg width="22" height="22"><use href="#wa"/></svg>Tanya kopi via WhatsApp</a></div>
+  </div>
+  <div class="w fb"><span>© 2026 Onthel Coffee. Kopi baik, dampak baik.</span><span>Wonosalam · Jombang · Jawa Timur</span></div>
+</footer>
+
+<!-- Keranjang -->
+<div class="ov dr" id="m-cart"><section class="md">
+  <div class="mh"><div><p class="eb">Pesananmu</p><h3>Keranjang <i>kopi.</i></h3></div><button class="x" data-close aria-label="Tutup">×</button></div>
+  <div id="cartBody"></div>
+</section></div>
+
+<!-- Checkout -->
+<div class="ov" id="m-co"><section class="md wd">
+  <form id="coForm" class="cf">
+    <div class="mh"><p class="eb">Onthel · checkout</p><button type="button" class="x" data-close aria-label="Tutup">×</button></div>
+    <p class="eb">Informasi pengiriman</p>
+    <label>Nama lengkap<input name="nama" required placeholder="Nama penerima"></label>
+    <div class="two"><label>Email<input name="email" type="email" required placeholder="nama@email.com"></label><label>Nomor telepon<input name="hp" type="tel" required placeholder="08xxxxxxxxxx"></label></div>
+    <label>Alamat lengkap<textarea name="alamat" rows="3" required placeholder="Nama jalan, nomor rumah, kecamatan, kota"></textarea></label>
+    <p class="eb">Metode pembayaran</p>
+    <div class="pay"><button type="button" class="on">QRIS</button><button type="button">Bank BCA</button><button type="button">Bank Mandiri</button></div>
+    <button class="btn dk wide" id="payBtn">Bayar dengan QRIS <span>→</span></button>
+  </form>
+  <aside class="sum"><p class="eb">Ringkasan pesanan</p><div id="sumBody"></div></aside>
+</section></div>
+
+<!-- Pembayaran -->
+<div class="ov" id="m-pay"><section class="md ct">
+  <div class="mh"><p class="eb">Onthel · payment</p><button class="x" data-close aria-label="Tutup">×</button></div>
+  <h3>Scan to <i>Pay</i></h3>
+  <p class="mut">Total Pembayaran: <b id="payTotal"></b></p>
+  <b id="payName" class="bank">QRIS</b>
+  <canvas id="qr" width="200" height="200"></canvas>
+  <p class="eb" id="timer"></p>
+  <div class="two"><button class="btn dk" id="saveQR">Simpan Kode QR</button><button class="btn" id="paid">Saya sudah bayar</button></div>
+  <p class="note">Mode demo: QR ini contoh. Untuk pembayaran sungguhan, hubungkan ke payment gateway (mis. Midtrans / Xendit).</p>
+</section></div>
+
+<!-- Berhasil -->
+<div class="ov" id="m-ok"><section class="md ct">
+  <div class="mh"><p class="eb">Onthel · done</p><button class="x" data-close aria-label="Tutup">×</button></div>
+  <div class="ok">✓</div>
+  <p class="eb" id="orderId"></p>
+  <h3>Terima kasih!</h3>
+  <p class="mut">Pesanan sudah kami terima. Detail pembayaran dan status pengiriman akan dikirimkan ke emailmu.</p>
+  <button class="btn dk" data-close>Kembali ke beranda</button>
+</section></div>
+
+<script src="script.js"></script>
 </body>
 </html>
