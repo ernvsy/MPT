@@ -1,6 +1,6 @@
 // ====== PENGATURAN (ganti sesuai kebutuhan) ======
 // Nomor WhatsApp tujuan pesanan, format internasional tanpa "+" atau spasi (contoh: 6281234567890)
-const WA_NUMBER = "6285892477475";
+const WA_NUMBER = "6288714482253";
 // Tautan media sosial di footer
 const INSTAGRAM_URL = "https://instagram.com/";
 const TIKTOK_URL = "https://tiktok.com/";
