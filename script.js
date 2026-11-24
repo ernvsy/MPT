@@ -1,9 +1,9 @@
 // ====== PENGATURAN (ganti sesuai kebutuhan) ======
 // Nomor WhatsApp tujuan pesanan, format internasional tanpa "+" atau spasi (contoh: 6281234567890)
-const WA_NUMBER = "6287714482253";
+const WA_NUMBER = "6285892477475";
 // Tautan media sosial di footer
-const INSTAGRAM_URL = "https://instagram.com/";
-const TIKTOK_URL = "https://tiktok.com/";
+const INSTAGRAM_URL = "https://instagram.com/tdcits";
+const TIKTOK_URL = "https://www.tiktok.com/@tdcits";
 // Minimal belanja untuk gratis ongkir (rupiah)
 const FREE_SHIPPING_MIN = 150000;
 // Ongkos kirim flat jika belanja di bawah batas gratis ongkir (rupiah)
