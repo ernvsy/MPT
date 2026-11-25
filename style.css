@@ -508,3 +508,6 @@ h2 em, h1 em, h3 em { font-style: italic; font-weight: 500; }
 @media (min-width: 901px) and (max-width: 1100px) {
   .hero-inner { padding-bottom: 150px; }
 }
+
+/* Samakan ukuran ikon WhatsApp di footer dengan Instagram & TikTok */
+#waHelpFooter svg { transform: scale(1.26); }
